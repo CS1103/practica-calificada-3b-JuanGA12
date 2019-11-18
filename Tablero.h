@@ -16,10 +16,10 @@ public:
 
     Tablero(double _num_figuras, double _num_filas, double _num_columnas);
 
-    Tablero(const std::string  & acp, const std::string  & posx, const std::string & posy) {
-        num_figuras = std::stod(acp);
-        num_filas = std::stod(posx);
-        num_columnas = std::stod(posy);
+    Tablero(const std::string  & figuras, const std::string & filas, const std::string & columnas) {
+        num_figuras = std::stod(figuras);
+        num_filas = std::stod(filas);
+        num_columnas = std::stod(columnas);
     };
 
     friend std::ostream& operator << (std::ostream & out, const Tablero & ct);

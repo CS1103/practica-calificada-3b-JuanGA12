@@ -16,6 +16,7 @@ void GenerarArchivo(vector <Rectangulo> &rec){
     for(auto &i:rec){
         archivo_salida<<i;
     }
+    archivo_salida.close();
 
 
 }

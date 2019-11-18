@@ -28,6 +28,7 @@ int main() {
     for(auto&i:rectangulos){
         cout<<i;
     }
+
     Selecionar_Rec(rectangulos);
     QuickSort(rectangulos);
 

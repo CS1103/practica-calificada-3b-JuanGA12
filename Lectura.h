@@ -49,6 +49,7 @@ void Leer(const string &archivo, vector<Rectangulo> & c, vector<Tablero> & table
             } while (datos.good());
 
 
+        datos.close();
 
         } else {
             throw logic_error("No se pudo abrir el archivo .in");
