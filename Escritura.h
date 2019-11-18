@@ -12,10 +12,18 @@
 #include "Tablero.h"
 
 void GenerarArchivo(vector <Rectangulo> &rec){
-    ofstream archivo_salida("Rectangulos2.out", ios::out);
-    for(auto &i:rec){
-        archivo_salida<<i;
+    //usando iteradores
+    auto inicial = begin(rec);
+    auto final = end(rec);
+    ofstream archivo_salida("Rectangulos3.out", ios::out);
+
+    for (; inicial != final; std::advance(inicial,1)) {
+        archivo_salida  << *inicial;
     }
+    //forma "normal"
+    /*for(auto &i:rec){
+        archivo_salida<<i;
+    }*/
     archivo_salida.close();
 
 
